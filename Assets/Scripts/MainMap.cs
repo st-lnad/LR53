@@ -7,6 +7,9 @@ public class MainMap : MonoBehaviour
     public GameObject villagePrefab;
     public GameObject korovanPrefab;
     public GameObject roadPrefab;
+
+    private GameObject road1;
+    private GameObject korovan;
     
     private GameObject make_road(GameObject[] villages)
     {
@@ -28,19 +31,18 @@ public class MainMap : MonoBehaviour
         village2.name = "Village2";
 
         // Создаем объект дороги
-        GameObject road1 = make_road(new GameObject[]{ village1,
-            village2});
+        road1 = make_road(new GameObject[]{ village1, village2});
 
         
-        // Создаем вторую деревню
-        GameObject korovan = Instantiate(korovanPrefab, new Vector3(0, 0, 0), Quaternion.identity);
-        village2.name = "Village2";
+        // Создаем корован
+        korovan = Instantiate(korovanPrefab, new Vector3(0, 0, 0), Quaternion.identity);
+        korovan.name = "Korovan";
 
     }
 
-    private void Update()
+    private void FixedUpdate()
     {
-        korovanPrefab.GetComponent<KorovanMovement>().init(korovanPrefab.transform.position, roadPrefab);
+        korovan.GetComponent<KorovanMovement>().init(korovan.transform.position, road1);
     }
 
 

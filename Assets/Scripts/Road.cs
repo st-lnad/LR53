@@ -5,12 +5,12 @@ using UnityEngine;
 public class Road : MyEntity
 {
     public float move_time = 50;
-    public Village[] villages = new Village[2];
+    public GameObject[] villages = new GameObject[2];
 
     public void init(GameObject[] villages)
     {
-        this.villages[0] = villages[0].GetComponent<Village>();
-        this.villages[1] = villages[1].GetComponent<Village>();
+        this.villages[0] = villages[0];
+        this.villages[1] = villages[1];
 
         // Добавляем компонент Line Renderer к объекту дороги
         gameObject.AddComponent<LineRenderer>();
@@ -24,7 +24,7 @@ public class Road : MyEntity
         gameObject.GetComponent<LineRenderer>().SetPosition(0, villages[0].transform.position);
         gameObject.GetComponent<LineRenderer>().SetPosition(1, villages[1].transform.position);
     }
-    public Village[] get_villages()
+    public GameObject[] get_villages()
     {
         return villages;
     }

@@ -29,7 +29,7 @@ public class KorovanMovement : MonoBehaviour
         movement_time = road.GetComponent<Road>().move_time;
         direction = road_for_moving.GetComponent<Road>().get_direction(current_position);
         speed = 1.0f;
-        Village[] villages = road_for_moving.GetComponent<Road>().get_villages();
+        GameObject[] villages = road_for_moving.GetComponent<Road>().get_villages();
         if (direction == 1)
         {
             endpoint = villages[1].transform.position;

@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class Road : MyEntity
 {
-    public float move_time = 50;
+    public float move_time = 5;
     public GameObject[] villages = new GameObject[2];
 
     public void init(GameObject[] villages)

@@ -42,7 +42,7 @@ public class MainMap : MonoBehaviour
 
     private void FixedUpdate()
     {
-        korovan.GetComponent<KorovanMovement>().init(korovan.transform.position, road1);
+
     }
 
 

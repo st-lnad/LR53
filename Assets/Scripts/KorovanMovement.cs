@@ -2,55 +2,29 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class KorovanMovement : MonoBehaviour
+public class KorovanMovement : LineMovement
 {
-    float movement_time;
-    GameObject road_for_moving;
     int direction;
-    float speed;
-    Vector3 increament;
-    Vector3 endpoint;
-    bool need_movement = false;
 
-    
-
-    Vector3 get_end()
+    public void init(GameObject road)
     {
-        return road_for_moving.GetComponent<Road>().get_villages()[((direction == 1) ? 1 : 0)].transform.position;
-            
-    }
+        if (!is_moving) { 
+            direction = road.GetComponent<Road>().get_direction(gameObject.transform.position);
+            Debug.Log(direction);
+            is_moving = true;
+            movement_time = road.GetComponent<Road>().move_time;
+            GameObject[] villages = road.GetComponent<Road>().get_villages();
 
-    public void init(Vector3 current_position, GameObject road)
-    {
-        //Debug.Log(current_position.ToString());
-        //Debug.Log(road.GetComponent<Road>().move_time.ToString());
-        need_movement = true;
-        road_for_moving = road;
-        movement_time = road.GetComponent<Road>().move_time;
-        direction = road_for_moving.GetComponent<Road>().get_direction(current_position);
-        speed = 1.0f;
-        GameObject[] villages = road_for_moving.GetComponent<Road>().get_villages();
-        if (direction == 1)
-        {
-            endpoint = villages[1].transform.position;
-            increament = (villages[1].transform.position - villages[0].transform.position) / movement_time;
-        }
-        else
-        {
-            endpoint = villages[0].transform.position;
-            increament = (villages[0].transform.position - villages[1].transform.position) / movement_time;
-        }
-    }
-
-    public Vector3 get_increment()
-    {
-        if (transform.position != endpoint)
-        {
-            return increament;
-        }
-        else
-        {
-            return new Vector3(0, 0, 0);
+            if (direction == 1)
+            {
+                to = villages[1].transform.position;
+                from = villages[0].transform.position;
+            }
+            else
+            {
+                to = villages[0].transform.position;
+                from = villages[1].transform.position;
+            }
         }
     }
 
@@ -63,13 +37,16 @@ public class KorovanMovement : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (need_movement)
+        elapsedTime += Time.deltaTime;
+        if (gameObject.transform.position != to)
         {
-            transform.Translate(get_increment());
-            if (transform.position == get_end())
-            {
-                need_movement = false;
-            }
+            var a = Time.deltaTime;
+            gameObject.transform.position = Vector3.Lerp(from, to, elapsedTime / movement_time);
+        }
+        else
+        {
+            elapsedTime = 0f;
+            is_moving = false;
         }
     }
 }

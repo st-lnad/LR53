@@ -1,5 +1,9 @@
 fileFormatVersion: 2
+<<<<<<< HEAD
 guid: 89b24f094106e3649a2ca5a6567ac57c
+=======
+guid: 4518ee8e8358e64469c6cb69fa7983c4
+>>>>>>> feature-core-scripts
 folderAsset: yes
 DefaultImporter:
   externalObjects: {}

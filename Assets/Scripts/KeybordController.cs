@@ -18,6 +18,7 @@ public class KeybordController : MonoBehaviour
     {
         if (Input.GetKey(KeyCode.Space))
         {
+            Debug.Log("Space pressed");
             gameObject.GetComponent<KorovanMovement>().init(road);
         }
     }

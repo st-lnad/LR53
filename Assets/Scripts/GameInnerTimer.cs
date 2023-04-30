@@ -4,17 +4,19 @@ using UnityEngine;
 
 public class GameInnerTimer : MonoBehaviour
 {
-    private float hours;
-    public float secs_per_day = 3;
+    public float hours;
+    public int days;
+    public float secs_per_day;
 
     public int get_time_in_days()
     {
-        return (int)(hours / 24);
+        return days;
     }
 
     public void add_time_to_timer(float secs_in_real_time)
     {
-        hours += 1 / (secs_in_real_time / secs_in_real_time) * 24; 
+        hours += (secs_in_real_time / secs_per_day) * 24;
+        days = (int)(hours / 24);
     }
 
     // Start is called before the first frame update

@@ -9,12 +9,11 @@ public class Korovan : MonoBehaviour
     public float money;
     public ulong capacity;
     public int famous;
-    // inventory
+    public int[] Inventory = new int[7];
 
 
     void Update()
     {
-    
     }
 
 }

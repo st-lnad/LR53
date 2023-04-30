@@ -47,11 +47,13 @@ public class BezierMovement : Movement
     {
         if (is_movement_allowed)
         {
-
-            elapsedTime += Time.deltaTime;
+            var dt = Time.deltaTime;
+            gameObject.GetComponent<GameInnerTimer>().add_time_to_timer(dt);
+            elapsedTime += dt;
             if (gameObject.transform.position != to)
             {
                 t = elapsedTime / movement_time;
+
                 gameObject.transform.position = Bezier.GetPoint(P0, P1, P2, P3, t);
             }
             else

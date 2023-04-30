@@ -17,7 +17,7 @@ public class KorovanMovement : MonoBehaviour
             Debug.Log("Okey");
             is_init_allowed = false;
             direction = road.GetComponent<Road>().get_direction(gameObject.transform.position);
-            movement_time = road.GetComponent<Road>().move_time;
+  movement_time = road.GetComponent<Road>().move_time*gameObject.GetComponent<GameInnerTimer>().secs_per_day;
             Transform[] raw_points = road.GetComponent<Road>().points;
             List<Vector3> points = new List<Vector3>();
 

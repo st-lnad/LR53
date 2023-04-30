@@ -22,6 +22,7 @@ public class MainMap : MonoBehaviour
 
     private void Start()
     {
+        /*
         // Создаем первую деревню
         GameObject village1 = Instantiate(villagePrefab, new Vector3(0, 0, 0), Quaternion.identity);
         village1.name = "Village1";
@@ -37,6 +38,7 @@ public class MainMap : MonoBehaviour
         // Создаем корован
         korovan = Instantiate(korovanPrefab, new Vector3(0, 0, 0), Quaternion.identity);
         korovan.name = "Korovan";
+        */
 
     }
 

@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 8522319053099373864}
   - component: {fileID: 4992918099070010295}
   - component: {fileID: 658878165823367791}
+  - component: {fileID: 6831806570115750516}
   m_Layer: 0
   m_Name: Korovan
   m_TagString: Untagged
@@ -71,8 +72,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
+  m_SortingLayerID: -246314219
+  m_SortingLayer: 2
   m_SortingOrder: 0
   m_Sprite: {fileID: -2413806693520163455, guid: a86470a33a6bf42c4b3595704624658b, type: 3}
   m_Color: {r: 0.19923791, g: 0.6226415, b: 0.19031683, a: 1}
@@ -97,3 +98,18 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4ca0a2c4d13985a499e14ce87e4df155, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &6831806570115750516
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6928072875575510196}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 69783105cae89f04fb8f8ff08c559b95, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  to: {x: 10, y: 5, z: 0}
+  time: 10
+  road: {fileID: 0}

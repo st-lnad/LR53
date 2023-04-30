@@ -12,7 +12,11 @@ GameObject:
   - component: {fileID: 4992918099070010295}
   - component: {fileID: 658878165823367791}
   - component: {fileID: 6831806570115750516}
+  - component: {fileID: 4411799553779645084}
+  - component: {fileID: 3937314004601711685}
+  - component: {fileID: 7946220911039663617}
   - component: {fileID: -5178876954084710605}
+  - component: {fileID: 2667347265164658054}
   m_Layer: 0
   m_Name: Korovan
   m_TagString: Untagged
@@ -118,6 +122,55 @@ MonoBehaviour:
   to: {x: 10, y: 5, z: 0}
   time: 10
   road: {fileID: 0}
+--- !u!114 &4411799553779645084
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6928072875575510196}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4c6d0a252e6ba5b4c93220c8897c7b5a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  P0: {x: 0, y: 0, z: 0}
+  P1: {x: 0, y: 0, z: 0}
+  P2: {x: 0, y: 0, z: 0}
+  P3: {x: 0, y: 0, z: 0}
+  t: 0
+--- !u!114 &3937314004601711685
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6928072875575510196}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bf9fcfea3141e9c46b4828aa3b3b8e29, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  places: []
+  roads: []
+--- !u!114 &7946220911039663617
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6928072875575510196}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 866c5554156c30247b9bc19d10b455d5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speed: 1
+  guard: 1
+  money: 0
+  capacity: 0
+  famous: 0
+  Inventory: 00000000000000000000000000000000000000000000000000000000
 --- !u!114 &-5178876954084710605
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -130,4 +183,21 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 711688dbc85c1224fb20962e553c2f46, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  hours: 0
+  days: 0
   secs_per_day: 3
+--- !u!114 &2667347265164658054
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6928072875575510196}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b890a5a4ae25d8144bec497889242cb4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  seller: {fileID: 0}
+  amount: 0
+  price: 0

@@ -37,6 +37,8 @@ public class PathFinder : MonoBehaviour
     {
         foreach (var place in places)
         {
+            print(place.transform.position);
+            print(korovan_position);
             if (place.transform.position == korovan_position)
             {
                 return place;
@@ -59,7 +61,8 @@ public class PathFinder : MonoBehaviour
 
     public GameObject get_road(GameObject place, GameObject korovan)
     {
-        GameObject place1 = get_place_by_korovan_position(korovan.transform.position);
+        GameObject place1 = get_place_by_korovan_position(gameObject.transform.position);
+        print(place1);
         foreach (var road in roads)
         {
             var road_ends = road.GetComponent<Road>().get_ends();

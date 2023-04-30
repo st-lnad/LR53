@@ -17,6 +17,7 @@ public class GoWithRightMouse : MonoBehaviour
         {
                 Debug.Log("Click near smth");
                 GameObject road = korovan.GetComponent<PathFinder>().get_road(gameObject, korovan);
+                print(road);
                 if (road != null)
                 {
                     korovan.GetComponent<KorovanMovement>().init(road);

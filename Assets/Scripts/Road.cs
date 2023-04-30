@@ -9,7 +9,6 @@ public class Road : MonoBehaviour
     public Transform[] points = new Transform[4];
 
 
-
     public GameObject[] get_ends()
     {
         return ends;

@@ -6,8 +6,16 @@ public class VillageMenuScript : MonoBehaviour
     public GameObject Menu0_1;
     public GameObject Menu1;
     public GameObject Menu2;
+
+    public GameObject korovan;
+
     public int status;
     public int tipe;
+
+    private void Update()
+    {
+
+    }
 
     private void OnMouseDown()
     {

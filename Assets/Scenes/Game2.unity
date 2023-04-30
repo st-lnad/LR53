@@ -1687,9 +1687,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 86fb586e7fa34c349886200457fa6ace, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Menu0: {fileID: 0}
+  Menu0_0: {fileID: 0}
+  Menu0_1: {fileID: 0}
   Menu1: {fileID: 0}
   Menu2: {fileID: 1294385082}
+  status: 0
+  tipe: 0
 --- !u!61 &1751090115
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -1723,6 +1726,18 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 130117489128167144, guid: 6a332845fceda3b49ae550ca88a71d31, type: 3}
+      propertyPath: m_SortingLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 130117489128167144, guid: 6a332845fceda3b49ae550ca88a71d31, type: 3}
+      propertyPath: m_SortingOrder
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 130117489128167144, guid: 6a332845fceda3b49ae550ca88a71d31, type: 3}
+      propertyPath: m_SortingLayerID
+      value: 570935799
+      objectReference: {fileID: 0}
     - target: {fileID: 213463404835882645, guid: 6a332845fceda3b49ae550ca88a71d31, type: 3}
       propertyPath: m_Name
       value: Village

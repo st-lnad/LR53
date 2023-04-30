@@ -22,36 +22,30 @@ public class MainMap : MonoBehaviour
 
     private void Start()
     {
-<<<<<<< HEAD
         /*
         // Создаем первую деревню
         GameObject village1 = Instantiate(villagePrefab, new Vector3(0, 0, 0), Quaternion.identity);
         village1.name = "Village1";
-=======
-        //// Создаем первую деревню
-        //GameObject village1 = Instantiate(villagePrefab, new Vector3(0, 0, 0), Quaternion.identity);
-        //village1.name = "Village1";
->>>>>>> feature-core-scripts
+        // Создаем первую деревню
+        GameObject village1 = Instantiate(villagePrefab, new Vector3(0, 0, 0), Quaternion.identity);
+        village1.name = "Village1";
 
-        //// Создаем вторую деревню
-        //GameObject village2 = Instantiate(villagePrefab, new Vector3(5, 0, 0), Quaternion.identity);
-        //village2.name = "Village2";
+        // Создаем вторую деревню
+        GameObject village2 = Instantiate(villagePrefab, new Vector3(5, 0, 0), Quaternion.identity);
+        village2.name = "Village2";
 
-        //// Создаем объект дороги
-        ////road1 = make_road(new GameObject[]{ village1, village2});
+        // Создаем объект дороги
+        //road1 = make_road(new GameObject[]{ village1, village2});
 
         
-<<<<<<< HEAD
+         Создаем корован
+        korovan = Instantiate(korovanPrefab, new Vector3(0, 0, 0), Quaternion.identity);
+        korovan.name = "Korovan";
+        
         // Создаем корован
         korovan = Instantiate(korovanPrefab, new Vector3(0, 0, 0), Quaternion.identity);
         korovan.name = "Korovan";
         */
-=======
-        //// Создаем корован
-        //korovan = Instantiate(korovanPrefab, new Vector3(0, 0, 0), Quaternion.identity);
-        //korovan.name = "Korovan";
->>>>>>> feature-core-scripts
-
     }
 
     private void FixedUpdate()

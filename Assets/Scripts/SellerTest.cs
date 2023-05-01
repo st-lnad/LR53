@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class SellerTest : MonoBehaviour
 {
-    public ProtoGorod seller;
+    public Village seller;
 
     public int amount;
     public int price;

@@ -1590,7 +1590,8 @@ MonoBehaviour:
   price_modifier: 0
   Inventory: 000000000000000000000000f4010000000000000000000000000000
   Capacity: 000000000000000000000000e8030000000000000000000000000000
-  village_type: 3
+  IsHere: 00000000000000
+  village_type: 1
 --- !u!212 &205743740
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -2028,7 +2029,8 @@ MonoBehaviour:
   price_modifier: 0
   Inventory: 00000000000000000000000000000000000000000000000000000000
   Capacity: 00000000000000000000000000000000000000000000000000000000
-  village_type: 0
+  IsHere: 00000000000000
+  village_type: 4
 --- !u!58 &224489898
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -5031,7 +5033,8 @@ MonoBehaviour:
   price_modifier: 0
   Inventory: 00000000000000000000000000000000000000000000000000000000
   Capacity: 00000000000000000000000000000000000000000000000000000000
-  village_type: 0
+  IsHere: 00000000000000
+  village_type: 3
 --- !u!212 &520499444
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -5247,7 +5250,8 @@ MonoBehaviour:
   price_modifier: 0
   Inventory: 00000000000000000000000000000000000000000000000000000000
   Capacity: 00000000000000000000000000000000000000000000000000000000
-  village_type: 0
+  IsHere: 00000000000000
+  village_type: -1
 --- !u!212 &555096480
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -5577,6 +5581,7 @@ MonoBehaviour:
   price_modifier: 0
   Inventory: 00000000000000000000000000000000000000000000000000000000
   Capacity: 00000000000000000000000000000000000000000000000000000000
+  IsHere: 00000000000000
   village_type: 0
 --- !u!212 &561951592
 SpriteRenderer:
@@ -8240,7 +8245,8 @@ MonoBehaviour:
   price_modifier: 0
   Inventory: 00000000000000000000000000000000000000000000000000000000
   Capacity: 00000000000000000000000000000000000000000000000000000000
-  village_type: 0
+  IsHere: 00000000000000
+  village_type: 6
 --- !u!212 &867500686
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -10209,7 +10215,8 @@ MonoBehaviour:
   price_modifier: 0
   Inventory: 00000000000000000000000000000000000000000000000000000000
   Capacity: 00000000000000000000000000000000000000000000000000000000
-  village_type: 0
+  IsHere: 00000000000000
+  village_type: 1
 --- !u!58 &1062530896
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -14274,7 +14281,8 @@ MonoBehaviour:
   price_modifier: 0
   Inventory: 00000000000000000000000000000000000000000000000000000000
   Capacity: 00000000000000000000000000000000000000000000000000000000
-  village_type: 0
+  IsHere: 00000000000000
+  village_type: 5
 --- !u!212 &1456406164
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -17406,6 +17414,7 @@ GameObject:
   - component: {fileID: 1751090115}
   - component: {fileID: 1751090116}
   - component: {fileID: 1751090117}
+  - component: {fileID: 1751090118}
   m_Layer: 0
   m_Name: Village1
   m_TagString: Place
@@ -17542,6 +17551,7 @@ MonoBehaviour:
   price_modifier: 0
   Inventory: 00000000000000000000000000000000000000000000000000000000
   Capacity: 00000000000000000000000000000000000000000000000000000000
+  IsHere: 00000000000000
 --- !u!114 &1751090117
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -17555,6 +17565,25 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   korovan: {fileID: 2045273934}
+--- !u!114 &1751090118
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1751090111}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1f99da76b351b724f8043e59cb2ca7c5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ID: 0
+  population: 0
+  price_modifier: 0
+  Inventory: 00000000000000000000000000000000000000000000000000000000
+  Capacity: 00000000000000000000000000000000000000000000000000000000
+  IsHere: 00000000000000
+  village_type: -1
 --- !u!1 &1758322137
 GameObject:
   m_ObjectHideFlags: 0
@@ -18085,6 +18114,7 @@ MonoBehaviour:
   price_modifier: 0
   Inventory: 00000000000000000000000000000000000000000000000000000000
   Capacity: 00000000000000000000000000000000000000000000000000000000
+  IsHere: 00000000000000
   village_type: 0
 --- !u!58 &1783796622
 CircleCollider2D:
@@ -20455,7 +20485,8 @@ MonoBehaviour:
   price_modifier: 0
   Inventory: 00000000000000000000000000000000000000000000000000000000
   Capacity: 00000000000000000000000000000000000000000000000000000000
-  village_type: 0
+  IsHere: 00000000000000
+  village_type: 2
 --- !u!58 &1949970282
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -21452,7 +21483,8 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: -5178876954084710605, guid: 8765ed10514d05b4dbca2b034a841323, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 8765ed10514d05b4dbca2b034a841323, type: 3}
 --- !u!1 &2045273934 stripped
 GameObject:

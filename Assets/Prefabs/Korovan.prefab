@@ -15,7 +15,6 @@ GameObject:
   - component: {fileID: 4411799553779645084}
   - component: {fileID: 3937314004601711685}
   - component: {fileID: 7946220911039663617}
-  - component: {fileID: -5178876954084710605}
   - component: {fileID: 2667347265164658054}
   m_Layer: 0
   m_Name: Korovan
@@ -171,21 +170,6 @@ MonoBehaviour:
   capacity: 0
   famous: 0
   Inventory: 00000000000000000000000000000000000000000000000000000000
---- !u!114 &-5178876954084710605
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6928072875575510196}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 711688dbc85c1224fb20962e553c2f46, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  hours: 0
-  days: 0
-  secs_per_day: 3
 --- !u!114 &2667347265164658054
 MonoBehaviour:
   m_ObjectHideFlags: 0

@@ -8,6 +8,7 @@ public class BezierMovement : Movement
     public Vector3 P1;
     public Vector3 P2;
     public Vector3 P3;
+    private int yesterday;
     [Range(0, 1)]
     public float t=0.0f;
     private void Start()
@@ -48,7 +49,12 @@ public class BezierMovement : Movement
         if (is_movement_allowed)
         {
             var dt = Time.deltaTime;
-            gameObject.GetComponent<GameInnerTimer>().add_time_to_timer(dt);
+            GameInnerTimer.add_time_to_timer(dt);
+            if (yesterday < GameInnerTimer.days) 
+            {
+                yesterday = GameInnerTimer.days;
+                MainThings.LifeGoesOn();
+            };
             elapsedTime += dt;
             if (gameObject.transform.position != to)
             {

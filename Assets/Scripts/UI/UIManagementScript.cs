@@ -5,6 +5,9 @@ public class UIManagementScript : MonoBehaviour
     public GameObject VillageMenu;
     public GameObject VillageMenu_Market_Buy;
     public GameObject VillageMenu_Market_Sell;
+    public GameObject VillageMenu_Inn;
+    public GameObject VillageMenu_Gossip;
+    public GameObject VillageMenu_End;
     public GameObject Village1_1;
     public GameObject Village1_2;
     public GameObject Village2_1;
@@ -41,6 +44,9 @@ public class UIManagementScript : MonoBehaviour
         VillageMenu.SetActive(false);
         VillageMenu_Market_Buy.SetActive(false);
         VillageMenu_Market_Sell.SetActive(false);
+        VillageMenu_Inn.SetActive(false);
+        VillageMenu_Gossip.SetActive(false);
+        VillageMenu_End.SetActive(false);
         Village1_1.SetActive(false);
         Village1_2.SetActive(false);
         Village2_1.SetActive(false);

@@ -23,7 +23,7 @@ public class GameInnerTimer
     static GameInnerTimer()
     {
         hours = 0;
-        secs_per_day = 1;
+        secs_per_day = 0.75f;
     }
     
 }

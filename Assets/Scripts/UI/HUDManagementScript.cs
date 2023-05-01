@@ -11,16 +11,18 @@ public class HUDManagementScript : MonoBehaviour
     public Text Text_Rank;
 
     public Text VillageMenu_text;
+    public Text VillageMenu_Inn_text;
 
     void Update()
     {
         Text_Days.text = "Day " + GameInnerTimer.days.ToString();
-        Text_Gold.text = "Gold \n" + korovan.GetComponent<Korovan>().money.ToString();
+        Text_Gold.text = "Gold \n" + korovan.GetComponent<Korovan>().money.ToString("0");
         Text_Rank.text = "Rank " + korovan.GetComponent<Korovan>().famous.ToString();
 
         if (korovan.GetComponent<KorovanMovement>().is_init_allowed)
         {
             VillageMenu_text.text = korovan.GetComponent<PathFinder>().get_place_by_korovan_position(korovan.transform.position).GetComponent<Village>().village_name;
+            VillageMenu_Inn_text.text = korovan.GetComponent<PathFinder>().get_place_by_korovan_position(korovan.transform.position).GetComponent<Village>().village_name;
         }
         
     }

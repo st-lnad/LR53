@@ -8,7 +8,7 @@ public class BezierMovement : Movement
     public Vector3 P1;
     public Vector3 P2;
     public Vector3 P3;
-    private int yesterday;
+    public int yesterday;
     [Range(0, 1)]
     public float t=0.0f;
     private void Start()
@@ -42,9 +42,8 @@ public class BezierMovement : Movement
         P2 = tmp;
     }
 
-    
 
-    void Update()
+void Update()
     {
         if (is_movement_allowed)
         {

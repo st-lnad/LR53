@@ -37,8 +37,8 @@ public class PathFinder : MonoBehaviour
     {
         foreach (var place in places)
         {
-            print(place.transform.position);
-            print(korovan_position);
+            //print(place.transform.position);
+           // print(korovan_position);
             if (place.transform.position == korovan_position)
             {
                 return place;

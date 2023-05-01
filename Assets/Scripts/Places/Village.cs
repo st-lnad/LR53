@@ -5,6 +5,8 @@ using UnityEngine;
 public class Village : ProtoGorod
 {
     public int village_type;
+    public Gossips.OrderNeeds Order;
+    public int test;
     
 
     public Vector3 get_position()
@@ -38,7 +40,7 @@ public class Village : ProtoGorod
     }
     private void Update()
     {
-        
+        test = Order.value;
     }
 
 }

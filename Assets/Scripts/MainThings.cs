@@ -6,6 +6,7 @@ public class MainThings
 {
     public static GameObject[] villages;
     public static int[] BasicCost = new int[7];
+    public static string[] stock_name = new string[7];
     public static int[] weight = new int[7];
     static MainThings()
     {
@@ -18,6 +19,13 @@ public class MainThings
         BasicCost[4] = 500; //Сталь
         BasicCost[5] = 800; //Инструменты
         BasicCost[6] = 2000; //Мебель
+        stock_name[0] = "Хлеб";
+        stock_name[1] = "Дерево";
+        stock_name[2] = "Уголь";
+        stock_name[3] = "Железо";
+        stock_name[4] = "Сталь";
+        stock_name[5] = "Инструменты";
+        stock_name[6] = "Мебель";
         weight[0] = 1;
         weight[1] = 5;
         weight[2] = 5;
@@ -51,8 +59,12 @@ public class MainThings
 
     public static void LifeGoesOn()
     {
+    
         foreach (GameObject Village in MainThings.villages)
         {
+            Village.GetComponent<Village>().Order.product = Random.Range(0, 7);
+            Village.GetComponent<Village>().Order.value = Random.Range(0, 3);
+            Village.GetComponent<Village>().Order.village = MainThings.villages[Random.Range(0, MainThings.villages.Length)].GetComponent<Village>();
             for (int i = 1; i < 7; i++)
             {
                 if (Village.GetComponent<Village>().IsHere[i])

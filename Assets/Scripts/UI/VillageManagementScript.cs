@@ -40,10 +40,10 @@ public class VillageManagementScript : MonoBehaviour
                 }
             }
 
-            if (obj.transform.position == korovan.GetComponent<PathFinder>().get_place_by_korovan_position(korovan.transform.position).transform.position)
-            {
-                obj.GetComponent<VillageMenuScript>().status = 0;
-            }
+         //   if (obj.transform.position == korovan.GetComponent<PathFinder>().get_place_by_korovan_position(korovan.transform.position).transform.position)
+          //  {
+          //      obj.GetComponent<VillageMenuScript>().status = 0;
+           // }
 
         }
     }

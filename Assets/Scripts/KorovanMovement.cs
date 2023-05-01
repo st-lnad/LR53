@@ -14,7 +14,6 @@ public class KorovanMovement : MonoBehaviour
     {
         if (is_init_allowed)
         {
-            Debug.Log("Okey");
             is_init_allowed = false;
             direction = road.GetComponent<Road>().get_direction(gameObject.transform.position);
             movement_time = road.GetComponent<Road>().move_time*GameInnerTimer.secs_per_day;

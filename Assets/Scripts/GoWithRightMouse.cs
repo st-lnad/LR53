@@ -1,5 +1,3 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class GoWithRightMouse : MonoBehaviour
@@ -11,6 +9,8 @@ public class GoWithRightMouse : MonoBehaviour
     {
         
     }
+    
+    /*
     private void OnMouseOver()
     {
         if (Input.GetMouseButtonDown(1))
@@ -28,6 +28,7 @@ public class GoWithRightMouse : MonoBehaviour
                 }
         }
     }
+    */
 
     // Update is called once per frame
     void Update()

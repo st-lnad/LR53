@@ -11,6 +11,7 @@ public class BezierMovement : Movement
     private int yesterday;
     [Range(0, 1)]
     public float t=0.0f;
+    public float esp = 0.001f;
     private void Start()
     {
         is_movement_allowed = false;
@@ -56,17 +57,22 @@ public class BezierMovement : Movement
                 MainThings.LifeGoesOn();
             };
             elapsedTime += dt;
-            if (gameObject.transform.position != to)
+            if ((gameObject.transform.position - to).magnitude > esp)
             {
                 t = elapsedTime / movement_time;
 
                 gameObject.transform.position = Bezier.GetPoint(P0, P1, P2, P3, t);
             }
-            else
+            else if ((gameObject.transform.position - to).magnitude <= esp && (gameObject.transform.position - to).magnitude > 0)
             {
+                gameObject.transform.position = to;
+            } else
+            {
+                t = 0.0f;
                 elapsedTime = 0f;
                 is_movement_allowed = false;
             }
+
         }
         //korovan.transform.position = Bezier.GetPoint(P0.position, P1.position, P2.position, P3.position, t);
     }

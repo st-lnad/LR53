@@ -5,6 +5,7 @@ using UnityEngine;
 public class Village : ProtoGorod
 {
     public int village_type;
+    public string village_name;
     
 
     public Vector3 get_position()

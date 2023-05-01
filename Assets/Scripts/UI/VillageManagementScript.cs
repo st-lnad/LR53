@@ -27,24 +27,26 @@ public class VillageManagementScript : MonoBehaviour
 
     void Update()
     {
-
-        foreach (GameObject obj in villages)
+        if (korovan.GetComponent<KorovanMovement>().is_init_allowed)
         {
-            obj.GetComponent<VillageMenuScript>().status = 2;
-
-            foreach (GameObject obj_nei in korovan.GetComponent<PathFinder>().get_neighbors(korovan.GetComponent<PathFinder>().get_place_by_korovan_position(korovan.transform.position)))
+            foreach (GameObject obj in villages)
             {
-                if (obj.transform.position == obj_nei.transform.position)
+                obj.GetComponent<VillageMenuScript>().status = 2;
+
+                foreach (GameObject obj_nei in korovan.GetComponent<PathFinder>().get_neighbors(korovan.GetComponent<PathFinder>().get_place_by_korovan_position(korovan.transform.position)))
                 {
-                    obj.GetComponent<VillageMenuScript>().status = 1;
+                    if (obj.transform.position == obj_nei.transform.position)
+                    {
+                        obj.GetComponent<VillageMenuScript>().status = 1;
+                    }
                 }
-            }
 
-            if (obj.transform.position == korovan.GetComponent<PathFinder>().get_place_by_korovan_position(korovan.transform.position).transform.position)
-            {
-                obj.GetComponent<VillageMenuScript>().status = 0;
-            }
+                if (obj.transform.position == korovan.GetComponent<PathFinder>().get_place_by_korovan_position(korovan.transform.position).transform.position)
+                {
+                    obj.GetComponent<VillageMenuScript>().status = 0;
+                }
 
+            }
         }
     }
 }

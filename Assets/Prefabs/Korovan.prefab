@@ -79,8 +79,8 @@ SpriteRenderer:
   m_SortingLayerID: -246314219
   m_SortingLayer: 2
   m_SortingOrder: 0
-  m_Sprite: {fileID: -2413806693520163455, guid: a86470a33a6bf42c4b3595704624658b, type: 3}
-  m_Color: {r: 0.19923791, g: 0.6226415, b: 0.19031683, a: 1}
+  m_Sprite: {fileID: 21300000, guid: a5628ac41d8eff74fa4b8345067c6c6b, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -138,6 +138,7 @@ MonoBehaviour:
   P2: {x: 0, y: 0, z: 0}
   P3: {x: 0, y: 0, z: 0}
   t: 0
+  esp: 0.001
 --- !u!114 &3937314004601711685
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -166,7 +167,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speed: 1
   guard: 1
-  money: 0
+  money: 50
   capacity: 0
   famous: 0
   Inventory: 00000000000000000000000000000000000000000000000000000000

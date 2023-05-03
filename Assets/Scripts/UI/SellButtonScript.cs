@@ -15,7 +15,8 @@ public class SellButtonScript : MonoBehaviour
     {
         if (((korovan.GetComponent<PathFinder>().get_place_by_korovan_position(korovan.transform.position).GetComponent<Village>().Capacity[Good_Type] -
             korovan.GetComponent<PathFinder>().get_place_by_korovan_position(korovan.transform.position).GetComponent<Village>().Inventory[Good_Type]) >= int.Parse(Good_Amount.text)) &&
-            korovan.GetComponent<Korovan>().Inventory[Good_Type] >= int.Parse(Good_Amount.text))
+            korovan.GetComponent<Korovan>().Inventory[Good_Type] >= int.Parse(Good_Amount.text) &&
+            int.Parse(Good_Amount.text) > 0)
         {
             korovan.GetComponent<Korovan>().money += int.Parse(Good_TotalPrice.text);
             korovan.GetComponent<Korovan>().Inventory[Good_Type] -= int.Parse(Good_Amount.text);

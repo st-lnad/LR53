@@ -88,14 +88,14 @@ public class MainThings
             village.Order.village = MainThings.villages[Random.Range(0, MainThings.villages.Length)].GetComponent<Village>();
 
             //Изменение людей в зависимости от еды
-            float difference = (float) (2 * village.Inventory[0] - village.Capacity[0]) / village.Capacity[0];
-            village.population = (int) (village.population * Mathf.Pow(2.0f, difference));
+           // float difference = (float) (2 * village.Inventory[0] - village.Capacity[0]) / village.Capacity[0];
+            village.population = (int) (village.population + (float)(2 * village.Inventory[0] - village.Capacity[0]) / village.Capacity[0] * 100);
             
             village.population = Mathf.Min(village.population, village.MaxPopulation);
 
             //Едение
-            village.Inventory[0] -= village.population / 10;
-            village.Inventory[0] += village.MaxPopulation / 20 ;
+            
+            village.Inventory[0] -=   village.population / 10 - village.MaxPopulation / 20 + (int) (Mathf.Abs(village.Inventory[0] - village.Capacity[0]/2) > village.Capacity[0]/200 ? ( Mathf.Sign(village.Inventory[0] - village.Capacity[0] / 2) * village.Capacity[0] / 200 ) : 0);
 
             //Изменение ресурсов в день
             for (int i = 0; i < 7; i++)

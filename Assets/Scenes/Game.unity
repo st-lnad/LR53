@@ -3464,6 +3464,7 @@ MonoBehaviour:
   village_type: 1
   test: 0
   village_name: WoodVille
+  MaxPopulation: 0
 --- !u!212 &205743740
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -3834,6 +3835,7 @@ MonoBehaviour:
   village_type: 4
   test: 0
   village_name: SteelVille
+  MaxPopulation: 0
 --- !u!114 &224489899
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -9353,6 +9355,7 @@ MonoBehaviour:
   village_type: 3
   test: 0
   village_name: IronVille
+  MaxPopulation: 0
 --- !u!212 &520499444
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -9717,6 +9720,7 @@ MonoBehaviour:
   village_type: -1
   test: 0
   village_name: MareVille
+  MaxPopulation: 0
 --- !u!212 &555096480
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -10043,6 +10047,7 @@ MonoBehaviour:
   village_type: 0
   test: 0
   village_name: FoodVille
+  MaxPopulation: 0
 --- !u!212 &561951592
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -15033,6 +15038,7 @@ MonoBehaviour:
   village_type: 1
   test: 0
   village_name: ForestVille
+  MaxPopulation: 0
 --- !u!212 &867500686
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -18639,6 +18645,7 @@ MonoBehaviour:
   village_type: 6
   test: 0
   village_name: FurniVille
+  MaxPopulation: 0
 --- !u!114 &1062530897
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -25694,6 +25701,7 @@ MonoBehaviour:
   village_type: 5
   test: 0
   village_name: ToolViile
+  MaxPopulation: 0
 --- !u!212 &1456406164
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -30807,6 +30815,7 @@ MonoBehaviour:
   village_type: -1
   test: 0
   village_name: MainVille
+  MaxPopulation: 0
 --- !u!1 &1754794522
 GameObject:
   m_ObjectHideFlags: 0
@@ -31501,6 +31510,7 @@ MonoBehaviour:
   village_type: 0
   test: 0
   village_name: NewToolVille
+  MaxPopulation: 0
 --- !u!114 &1783796623
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -35061,6 +35071,7 @@ MonoBehaviour:
   village_type: 2
   test: 0
   village_name: CoalVille
+  MaxPopulation: 0
 --- !u!114 &1949970283
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -36507,6 +36518,19 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 6928072875575510196, guid: 8765ed10514d05b4dbca2b034a841323, type: 3}
   m_PrefabInstance: {fileID: 2045273933}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &2045273943
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2045273934}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7a7c947287f9be84ca4c94212a0a7a99, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  yesterday: 0
 --- !u!1 &2050822454
 GameObject:
   m_ObjectHideFlags: 0

@@ -8,7 +8,7 @@ public class Village : ProtoGorod
     public Gossips.OrderNeeds Order;
     public int test;
     public string village_name;
-    
+    public int MaxPopulation;
 
     public Vector3 get_position()
     {
@@ -17,10 +17,11 @@ public class Village : ProtoGorod
 
     private void Start()
     {
-        price_modifier = 5;
+        population = 1000;
+        price_modifier = 3;
         for (int i = 0; i < 7; i++) {
-            
             if (village_type == i) {
+                population = 100;
                 price_modifier = 2;
                 Capacity[i] = 1000;
             }
@@ -38,6 +39,7 @@ public class Village : ProtoGorod
 
 
         }
+        MaxPopulation = population * 2;
     }
     private void Update()
     {
